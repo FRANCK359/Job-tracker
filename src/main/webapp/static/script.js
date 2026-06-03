@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 // 1. FONCTION : Assemble les morceaux de HTML comme un puzzle
 async function chargerComposants() {
     try {
-        // Les fichiers sont dans le même dossier que index.html
-        document.getElementById('navbar-placeholder').innerHTML = await fetch('navbar.html').then(res => res.text());
-        document.getElementById('form-placeholder').innerHTML = await fetch('formulaire.html').then(res => res.text());
-        document.getElementById('liste-placeholder').innerHTML = await fetch('liste.html').then(res => res.text());
+        // Les fichiers sont dans le dossier components
+        document.getElementById('navbar-placeholder').innerHTML = await fetch('components/navbar.html').then(res => res.text());
+        document.getElementById('form-placeholder').innerHTML = await fetch('components/formulaire.html').then(res => res.text());
+        document.getElementById('liste-placeholder').innerHTML = await fetch('components/liste.html').then(res => res.text());
     } catch (erreur) {
         console.error("Erreur lors du chargement des composants HTML :", erreur);
     }
