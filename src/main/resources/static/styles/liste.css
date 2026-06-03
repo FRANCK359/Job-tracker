@@ -1,0 +1,137 @@
+/* Zone des filtres de recherche */
+.search-section {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.search-box {
+    position: relative;
+    flex: 1;
+}
+
+.search-box i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* Zone de la liste */
+.list-section {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.list-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+/* Tableau Responsive */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+th {
+    background-color: #f8fafc;
+    color: var(--text-muted);
+    padding: 12px;
+    font-weight: 600;
+    border-bottom: 2px solid #edf2f7;
+}
+
+td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #edf2f7;
+    vertical-align: middle;
+}
+
+/* Badges de couleur pour les statuts */
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-encours { background-color: var(--status-encours); color: var(--status-txt-encours); }
+.badge-entretien { background-color: var(--status-entretien); color: var(--status-txt-entretien); }
+.badge-retenu { background-color: var(--status-retenu); color: var(--status-txt-retenu); }
+.badge-echec { background-color: var(--status-echec); color: var(--status-txt-echec); }
+
+/* Boutons d'action rapides */
+.actions-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-delete, .btn-edit {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+    padding: 5px;
+}
+
+.btn-delete {
+    color: var(--status-txt-echec);
+}
+
+.btn-edit {
+    color: var(--primary);
+}
+
+.btn-delete:hover, .btn-edit:hover {
+    transform: scale(1.2);
+}
+
+/* Boutons de fichiers */
+.file-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f1f5f9;
+    color: var(--primary);
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.file-btn:hover {
+    background-color: var(--secondary-hover);
+}
+
+.link-btn {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}

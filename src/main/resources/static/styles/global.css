@@ -1,0 +1,71 @@
+/* Définition de nos variables de couleur pour un thème moderne */
+:root {
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --text-main: #2d3748;
+    --text-muted: #718096;
+    --primary: #4f46e5;       /* Indigo moderne */
+    --primary-hover: #4338ca;
+    --secondary: #e2e8f0;
+    --secondary-hover: #cbd5e1;
+
+    /* Couleurs pour nos statuts de candidature */
+    --status-encours: #fef3c7;   /* Jaune pastel */
+    --status-txt-encours: #d97706;
+    --status-entretien: #e0e7ff; /* Bleu pastel */
+    --status-txt-entretien: #4f46e5;
+    --status-retenu: #d1fae5;    /* Vert pastel */
+    --status-txt-retenu: #059669;
+    --status-echec: #fee2e2;     /* Rouge pastel */
+    --status-txt-echec: #dc2626;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* Style des boutons génériques */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--text-main);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-hover);
+}

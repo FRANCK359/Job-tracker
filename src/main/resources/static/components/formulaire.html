@@ -1,0 +1,47 @@
+<section class="form-section">
+    <h2 id="formTitle"><i class="fas fa-plus-circle"></i> Ajouter une candidature</h2>
+    <form id="candidatureForm">
+        <input type="hidden" id="candidatureId">
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="nomEntreprise">Entreprise *</label>
+                <input type="text" id="nomEntreprise" required placeholder="Ex: Sogeti, Crédit Agricole...">
+            </div>
+
+            <div class="form-group">
+                <label for="dateCandidature">Date de candidature</label>
+                <input type="date" id="dateCandidature">
+            </div>
+
+            <div class="form-group">
+                <label for="lienOffre">Lien de l'offre</label>
+                <input type="url" id="lienOffre" placeholder="https://...">
+            </div>
+
+            <div class="form-group">
+                <label for="etat">Statut actuel *</label>
+                <select id="etat" required>
+                    <option value="encours">En cours</option>
+                    <option value="entretien">Entretien</option>
+                    <option value="retenu">Retenu 🎉</option>
+                    <option value="echec">Échec ❌</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="lettreFile">Lettre de motivation (PDF uniquement)</label>
+                <input type="file" id="lettreFile" accept=".pdf">
+            </div>
+
+            <div class="form-group">
+                <label for="cvFile">Déposer votre CV (PDF uniquement)</label>
+                <input type="file" id="cvFile" accept=".pdf">
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" id="btnSubmit" class="btn btn-primary">Enregistrer la candidature</button>
+            <button type="button" id="btnAnnuler" class="btn btn-secondary" style="display: none;" onclick="resetForm()">Annuler</button>
+        </div>
+    </form>
+</section>

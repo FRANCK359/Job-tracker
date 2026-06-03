@@ -1,0 +1,34 @@
+<div>
+    <section class="search-section">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchEntreprise" placeholder="Rechercher une entreprise...">
+        </div>
+        <div class="search-box">
+            <i class="fas fa-calendar-alt"></i>
+            <input type="date" id="searchDate">
+        </div>
+        <button class="btn btn-secondary" onclick="reinitialiserRecherche()">Effacer</button>
+    </section>
+
+    <section class="list-section">
+        <h2><i class="fas fa-list"></i> Mes Candidatures (<span id="totalCandidatures">0</span>)</h2>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                <tr>
+                    <th>Entreprise</th>
+                    <th>Date</th>
+                    <th>Lien</th>
+                    <th>Lettre</th>
+                    <th>CV</th>
+                    <th>Statut</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="candidaturesTableBody">
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>
